@@ -1,17 +1,23 @@
 # YouTubeExpertSearch
 
-A **YouTubeExpertSearch** egy célzott kereső és elemző alkalmazás, amely segít YouTube videók és szakértői tartalmak hatékony keresésében, szűrésében és feldolgozásában.
+A **YouTubeExpertSearch** egy célzott kereső és elemző alkalmazási ökoszisztéma, amely segít YouTube videók és szakértői tartalmak hatékony keresésében, szűrésében és feldolgozásában.
 
-## Rendszer áttekintés
+## 📂 Projekt Mappaszerkezet
 
-Ez a tárhely jelenleg a projekt tervezési és előkészítési fázisában van. A részletes 4-pontos megvalósítási terv a [`PLAN.md`](PLAN.md) fájlban található.
+```
+YouTubeExpertSearch/
+├── .env                # Közös környezeti változók (pl. YOUTUBE_API_KEY)
+├── .env.example        # Mintafájl a környezeti változókhoz
+├── README.md           # Fő dokumentáció
+├── PLAN.md             # 4-pontos részletes megvalósítási terv
+├── package.json        # Gyökér szintű futtatási scriptek
+├── uitest/             # UI prototípus és teszt alkalmazás (Vite + React)
+├── backend/            # Backend szolgáltatás és API (fejlesztés alatt)
+└── extension/          # Chrome bővítmény (Manifest V3 - fejlesztés alatt)
+```
 
-## Fő funkciók (Tervezet)
+## 🚀 Futtatás
 
-1. **Intelligens Keresés & Szűrés**: YouTube Data API integráció, szakértői csatorna- és témaszűrők.
-2. **Tartalom & Átirat Elemzés**: Videó transzkriptek kinyerése és strukturált elemzése AI segítségével.
-3. **Interaktív UX & Megjelenítés**: Felhasználóbarát találati felület, beágyazott lejátszóval és kiemelésekkel.
-4. **Adatkezelés & Exportálás**: Mentett szakértői anyagok gyűjtése, jegyzetelés és exportálás.
+- **UI Test alkalmazás indítása:** `npm run dev:uitest` (vagy lépj be a `uitest` mappába és futtasd az `npm run dev` parancsot).
 
----
-*Utolsó frissítés: 2026-09-03*
+Részletes megvalósítási terv: [`PLAN.md`](PLAN.md)
