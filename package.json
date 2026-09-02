@@ -1,0 +1,9 @@
+{
+  "name": "youtube-expert-search-root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:uitest": "npm --prefix uitest run dev",
+    "build:uitest": "npm --prefix uitest run build"
+  }
+}
